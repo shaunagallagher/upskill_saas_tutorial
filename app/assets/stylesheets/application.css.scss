@@ -19,35 +19,12 @@
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
-//typography styles
+//TYPOGRAPY STYLES------------------------------------------------------------------------------------------------------------------
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-//top navbar background gradient
-.navbar, .home-callout {
-  //gradient provided by  @_ighosh at uiGradients.com
-  color: white;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-//top navbar color and hover state
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
-  color: white;
-  &:hover{
-      color:white;
-      opacity: 0.75;
-  }
-}
-
-//gets rid of gap, and makes the homepage fancy/big
-.home-callout{
- margin: -20px;
- padding-top: 50px;
- padding-bottom: 100px;
-}
+//NAVBAR STYLES---------------------------------------------------------------------------------------------------------------------
 
 .navbar {
   border: none;
@@ -57,3 +34,42 @@ h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
+
+//background gradient
+.navbar, .home-callout {
+  //gradient provided by  @_ighosh at uiGradients.com
+  color: white;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+//top navbar color and hover state for links
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
+  color: white;
+  &:hover{
+      color:white;
+      opacity: 0.75;
+  }
+}
+
+//mobile collapse button
+.navbar-default .navbar-toggle .icon-bar{
+    background-color:white;
+}
+
+.navbar-default .navbar-toggle{
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #434343;
+    }
+}
+//HOMEPAGE STYLES-------------------------------------------------------------------------------------------------------------------
+
+//gets rid of gap, and makes the homepage fancy/big
+.home-callout{
+ margin: -20px;
+ padding-top: 50px;
+ padding-bottom: 100px;
+}
+
