@@ -33,6 +33,15 @@ h1, h2, h3 {
   background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+//top navbar color and hover state
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
+  color: white;
+  &:hover{
+      color:white;
+      opacity: 0.75;
+  }
+}
+
 //gets rid of gap, and makes the homepage fancy/big
 .home-callout{
  margin: -20px;
@@ -44,11 +53,7 @@ h1, h2, h3 {
   border: none;
 }
 
-//top navbar color and hover state
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
-  color: white;
-  &:hover{
-      color:white;
-      opacity: 0.75;
-  }
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
 }
